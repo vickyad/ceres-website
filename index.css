@@ -1,0 +1,315 @@
+/* 
+#####################
+# Definições gerais #
+#####################
+*/
+
+/* Grids */
+header {
+    grid-area: cabecalho;
+}
+
+nav {
+    grid-area: navegacao;
+}
+
+main {
+    grid-area: conteudo;
+}
+
+section {
+    grid-area: noticias;
+}
+
+div{
+    grid-area: painel;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 40px 1fr 60px;
+    grid-template-areas: 
+        'cabecalho'
+        'navegacao'
+        'conteudo'
+        'rodape'
+}
+
+/* Grid do Index */
+#index {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 140px 40px 440px 1fr 60px;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'navegacao navegacao'
+        'painel painel'
+        'conteudo noticias'
+        'rodape rodape'
+}
+
+
+/* Aparência geral do site */
+/* Body */
+body {
+    margin: 0 auto;
+    background-image: url("images/wallpaper.jpg");
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    text-align: justify;
+    color: white;
+}
+
+
+/* Header */
+header {
+    padding: 1%;
+
+    background-color: #32384D;
+}
+
+header img {
+    float: left;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+header h1 {
+    color: #F6B557;
+}
+
+
+/* Nav */
+nav {
+    background-color: #211F30;
+}
+
+li{ 
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #E29930;
+}
+
+
+/* Main */
+main {
+    margin: 5%;
+    padding: 3%;
+
+    background-color: #32384D;
+}
+
+
+/* Footer */
+footer {
+    text-align: right;
+
+    background-color: #211F30;
+}
+
+svg{
+    fill: white;
+}
+
+svg:hover{
+    fill: #E29930;
+}
+
+
+
+/*
+#########
+# Index #
+#########
+*/
+
+/* Slides */
+/* Caixa slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Esconde outras imagens */
+.mySlides {
+    display: none;
+}
+  
+/* Fading */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Botao */
+.go_back{
+    padding: 1%;
+
+    border-radius: 25px;
+
+    text-shadow: none;
+
+    background-color: #217CA3;
+}
+
+.pos{
+    position: absolute;
+}
+
+.go_back:hover{
+    background-color: #66ACCA;
+    color: white;
+}
+
+
+/* Noticias */
+section {
+    margin: 11.5%;
+    padding: 4%;
+
+    background-color: #217CA3;
+}
+
+.noticia{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 4%;
+
+    font-size: 12px;
+
+    background-color: #66ACCA;
+}
+
+h3{
+    color: #32384D;
+}
+
+.link_news:hover {
+    color: #211F30;
+}
+
+
+
+/*
+############
+# About us #
+############
+*/
+
+#img_aboutus {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+/*
+###################
+# About asteroids #
+###################
+*/
+
+.list_types{
+    display: block;
+}
+
+
+
+/*
+##############
+# Contact us #
+##############
+*/
+
+#img_contactus{
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+/* Div do contato */
+#contact{
+    margin: 3%;
+
+    float: right;
+}
+
+
+/* Formulário */
+form{
+    width: 400px;
+}
+
+/* Campos de preenchimento */
+.campo{
+    margin-bottom: 5px;
+}
+
+textarea{
+    width: 200px;
+    height: 100px;
+}
+
+/* Botao enviar */
+button{
+    padding: 0.5%;
+
+    width: 60px;
+    height: 30px;
+
+    border: none;
+    text-shadow: 1px 1px 1px #090803;
+
+    background-color: #E29930;
+    color: white;
+}
+
+button:hover{
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #F6B557;
+}
+
+
+
+/*
+##################
+# Página de erro #
+##################
+*/
+#error404{
+    background-image: url("images/error-404.jpg");
+    background-size: 100%;
+
+    text-align: center;
+}
